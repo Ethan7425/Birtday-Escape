@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Game - Day 3</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="main-header">
+            <div class="header-content">
+                <h1 class="game-title">
+                    <span class="title-icon">🔮</span>
+                    16-Day Escape Game
+                </h1>
+                <div class="day-indicator">Day 3</div>
+            </div>
+        </header>
+
+        <main class="puzzle-container">
+            <div class="puzzle-content">
+                <p class="puzzle-text">
+                    🚀 You're getting better at this! Day 3 challenge:<br><br>
+                    <strong>The more you take, the more you leave behind. What am I?</strong>
+                </p>
+                
+                <div class="input-container">
+                    <input type="text" id="answer" placeholder="Enter your answer..." autocomplete="off">
+                    <button id="continueBtn" disabled>Continue</button>
+                </div>
+            </div>
+
+            <div class="not-available" style="display: none;">
+                <p>🔒 This puzzle is not available yet. Come back on the right day!</p>
+            </div>
+        </main>
+
+        <div class="navigation">
+            <a href="../index.html" class="nav-link">← Back to Calendar</a>
+        </div>
+    </div>
+
+    <div class="win-modal" id="winModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="checkmark">✅</span>
+                <h2>Congratulations!</h2>
+            </div>
+            <p>You've solved Day 3!</p>
+            <p class="modal-subtitle">You're on fire! Keep it up!</p>
+            <button class="modal-btn" onclick="goBackToCalendar()">Back to Calendar</button>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // Page-specific configuration
+        const pageConfig = {
+            dayNumber: 3,
+            correctAnswer: "footsteps",
+            nextPageUrl: "day4.html"
+        };
+        
+        // Initialize the page
+        initializePage(pageConfig);
+    </script>
+</body>
+</html>
