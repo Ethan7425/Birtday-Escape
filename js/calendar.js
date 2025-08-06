@@ -17,7 +17,7 @@ function generateCalendarDays() {
 
     calendarGrid.innerHTML = '';
 
-    for (let day = 1; day <= 16; day++) {
+    for (let day = 1; day <= 18; day++) {
         const isUnlocked = typeof window.unlockedDays !== "undefined" && window.unlockedDays.includes(day);
         const isCompleted = completedDays.includes(day);
         const dayElement = createDayElement(day, isUnlocked, isCompleted);
@@ -90,7 +90,7 @@ function updateProgress() {
     const progressText = document.getElementById('progressText');
 
     const completedCount = completedDays.length;
-    const totalDays = 16;
+    const totalDays = 18;
     const percentage = (completedCount / totalDays) * 100;
 
     if (progressFill) progressFill.style.width = `${percentage}%`;
