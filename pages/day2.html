@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escape Game - Day 2</title>
+    <title>Escape Game - Day 1</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,27 +17,33 @@
                     <span class="title-icon">🔮</span>
                     16-Day Escape Game
                 </h1>
-                <div class="day-indicator">Day 2</div>
+                <div class="day-indicator">Day 1</div>
             </div>
         </header>
 
         <main class="puzzle-container">
             <div class="puzzle-content">
                 <p class="puzzle-text">
-                    🌟 Excellent work yesterday! Here's your second challenge:<br><br>
-                    <strong>I speak without a mouth and hear without ears. I have no body, but come alive with wind. What am I?</strong>
+                    🎉 Welcome to the escape game! Your first challenge awaits.<br><br>
+                    <strong>Stinky Time</strong>
                 </p>
-                
+        
+                <!-- 💡 Image clue -->
+                <img src="../assets/images/day2_1.png" alt="Clue Image" class="puzzle-image">
+
+                <img src="../assets/images/day2_2.png" alt="Clue Image" class="puzzle-image">
+
                 <div class="input-container">
                     <input type="text" id="answer" placeholder="Enter your answer..." autocomplete="off">
                     <button id="continueBtn" disabled>Continue</button>
                 </div>
             </div>
-
+        
             <div class="not-available" style="display: none;">
                 <p>🔒 This puzzle is not available yet. Come back on the right day!</p>
             </div>
         </main>
+        
 
         <div class="navigation">
             <a href="../index.html" class="nav-link">← Back to Calendar</a>
@@ -50,8 +56,8 @@
                 <span class="checkmark">✅</span>
                 <h2>Congratulations!</h2>
             </div>
-            <p>You've solved Day 2!</p>
-            <p class="modal-subtitle">Excellent work! Ready for more?</p>
+            <p>You've solved Day 2! You stink </p>
+            <p class="modal-subtitle">Great job! Ready for the next challenge?</p>
             <button class="modal-btn" onclick="goBackToCalendar()">Back to Calendar</button>
         </div>
     </div>
@@ -60,8 +66,8 @@
     <script>
         // Page-specific configuration
         const pageConfig = {
-            dayNumber: 2,
-            correctAnswer: "echo",
+            dayNumber: 1,
+            correctAnswer: "soraka",
             nextPageUrl: "day3.html"
         };
         

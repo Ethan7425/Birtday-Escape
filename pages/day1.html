@@ -25,19 +25,23 @@
             <div class="puzzle-content">
                 <p class="puzzle-text">
                     🎉 Welcome to the escape game! Your first challenge awaits.<br><br>
-                    <strong>What has keys but no locks, space but no room, and you can enter but not go inside?</strong>
+                    <strong>A quoi correspond cette image ? (1 Mot)</strong>
                 </p>
-                
+        
+                <!-- 💡 Image clue -->
+                <img src="../assets/images/day1.png" alt="Clue Image" class="puzzle-image">
+        
                 <div class="input-container">
                     <input type="text" id="answer" placeholder="Enter your answer..." autocomplete="off">
                     <button id="continueBtn" disabled>Continue</button>
                 </div>
             </div>
-
+        
             <div class="not-available" style="display: none;">
                 <p>🔒 This puzzle is not available yet. Come back on the right day!</p>
             </div>
         </main>
+        
 
         <div class="navigation">
             <a href="../index.html" class="nav-link">← Back to Calendar</a>
@@ -61,7 +65,7 @@
         // Page-specific configuration
         const pageConfig = {
             dayNumber: 1,
-            correctAnswer: "keyboard",
+            correctAnswer: "cavalier",
             nextPageUrl: "day2.html"
         };
         

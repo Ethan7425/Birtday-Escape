@@ -152,11 +152,28 @@ body {
     opacity: 0.1;
 }
 
+@keyframes shake {
+    0% { transform: translate(0); }
+    20% { transform: translate(-3px); }
+    40% { transform: translate(3px); }
+    60% { transform: translate(-3px); }
+    80% { transform: translate(3px); }
+    100% { transform: translate(0); }
+}
+
 .calendar-day.locked {
     background: var(--bg-tertiary);
     color: var(--text-light);
     border-color: var(--border-color);
     cursor: not-allowed;
+    transition: all 0.2s ease;
+}
+
+/* 🔒 Shake + red border on hover for locked days */
+.calendar-day.locked:hover {
+    animation: shake 0.4s;
+    border-color: var(--error-red); /* You can define --error-red in your root */
+    box-shadow: 0 0 10px rgba(239, 68, 68, 0.5);
 }
 
 .calendar-day.completed {
@@ -642,4 +659,13 @@ body {
     .header-content {
         padding: 1.5rem;
     }
+}
+
+.puzzle-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
